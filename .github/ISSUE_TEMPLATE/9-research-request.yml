@@ -1,0 +1,84 @@
+name: '🔍 Research Request'
+description: 'Request for researching task.'
+title: '[Research] '
+#labels: ['Topic: Research', 'Status: In Triage']
+#projects: ["sendance/4"]
+#assignees:
+
+body:
+- type: markdown
+  attributes:
+    value: "To expedite issue processing, please search open and closed issues before submitting a new one. Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`"
+- type: markdown
+  attributes:
+    value: "# 🔍 Research Request"
+- type: input
+  attributes:
+    label: Source Type
+    description: Where the this issue/request originates from. E.g. a backlog ticket, QMS-Ticket (PIT) or Customer Feedback, Ideation Workshop Meeting, etc.
+    placeholder: "e.g. 'Backlog'"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Source Link
+    description: E.g. a link to the backlog ticket, customer support request, meeting notes etc.
+    placeholder: "E.g. '#xyz' or 'https//...'"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Description
+    description: Provide a clear and concise description of the research request, including the problem or question that needs to be investigated.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Background
+    description: |
+      Provide any relevant background information that would help the researcher understand the context and scope of the request.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Research Questions
+    description: List the specific research questions that need to be addressed.
+    placeholder: |
+      Write the questions here (add or remove as many steps as needed)
+      1. 
+      2. 
+      3. 
+      4. 
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected Deliverables
+    description: Specify the expected deliverables or outcomes of the research.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Include any additional information, resources, or constraints that would be helpful for the researcher.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: "_The following sections have to be filled by the person who is responsible for solving the bug._"
+- type: textarea
+  attributes:
+    label: Solution Summary
+    description: (TO BE FILLED BY ENGINEER)
+    value: Provide a brief summary of the final decision and, if applicable, of the final solution and its outcome.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Solution Path
+    description: (TO BE FILLED BY ENGINEER)
+    value: |
+      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
+      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the requested feature. 
+  validations:
+    required: false

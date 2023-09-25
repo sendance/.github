@@ -1,0 +1,84 @@
+name: '📚 Documentation Report'
+description: 'Report issues or enhancements regarding the documentation.'
+title: '[Documentation] '
+#labels: ['Topic: Documentation', 'Status: In Triage']
+#projects: ["sendance/4"]
+#assignees:
+
+body:
+- type: markdown
+  attributes:
+    value: "To expedite issue processing, please search open and closed issues before submitting a new one. Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`"
+- type: markdown
+  attributes:
+    value: "# 📚 Documentation Report"
+- type: input
+  attributes:
+    label: Source Type
+    description: Where the this issue/request originates from. E.g. a backlog ticket, QMS-Ticket (PIT) or Customer Feedback, Ideation Workshop Meeting, etc.
+    placeholder: "e.g. 'Backlog'"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Source Link
+    description: E.g. a link to the backlog ticket, customer support request, meeting notes etc.
+    placeholder: "E.g. '#xyz' or 'https//...'"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Description
+    description: Provide a clear and concise description of the enhancement you are requesting.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Location
+    description: |
+      Specify the location of the documentation where the issue exists, such as the file, section, or URL.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected Documentation
+    description: Explain what you expected to find or how you think the documentation should be improved. It could be revised wording, additional examples, or any other modifications that would enhance the documentation. 
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Actual Documentation
+    description:  Include the relevant snippet or excerpt of the current documentation that needs improvement. Provide specific details about what is incorrect, unclear, or missing.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Media
+    description: If applicable, include screenshots or GIFs to help understanding of what should be improved. 
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Provide any additional information or context that might be helpful for reviewers or maintainers.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: "_The following sections have to be filled by the person who is responsible for handling the documentation report._"
+- type: textarea
+  attributes:
+    label: Solution Summary
+    description: (TO BE FILLED BY ENGINEER)
+    value: Provide a brief summary of the final decision and, if applicable, of the final solution and its outcome.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Solution Path
+    description: (TO BE FILLED BY ENGINEER)
+    value: |
+      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
+      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the reported issue in the documentation. 
+  validations:
+    required: false

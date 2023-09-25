@@ -1,0 +1,123 @@
+name: '🐞 Bug Report'
+description: 'Report a bug to help improve the project.'
+title: '[Bug] '
+#labels: []
+#projects: ["sendance/4"]
+#assignees:
+
+body:
+- type: markdown
+  attributes:
+    value: "To expedite issue processing, please search open and closed issues before submitting a new one. Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`"
+- type: markdown
+  attributes:
+    value: "# 🐞 Bug"
+- type: input
+  attributes:
+    label: Source Type
+    description: Where the this issue/request originates from. E.g. a backlog ticket, QMS-Ticket (PIT) or Customer Feedback, Ideation Workshop Meeting, etc.
+    placeholder: "e.g. 'Backlog'"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Source Link
+    description: E.g. a link to the backlog ticket, customer support request, meeting notes etc.
+    placeholder: "E.g. '#xyz' or 'https//...'"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Description
+    description: Provide a clear and concise description of the bug you encountered.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: |
+      Outline the steps to reproduce the bug in a systematic manner. This helps in identifying the exact scenario that triggers the issue.       
+    placeholder: |
+      1. Use x argument / navigate to
+      2. Fill this information
+      3. Go to...
+      4. See error -->
+  validations:
+    required: false
+- type: checkboxes
+  attributes:
+    label: Is this a regression?
+    description: Did this behaviour used to work in the previous version?
+    options:
+    - label: "Yes"
+    - label: "No"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Last known working version
+    description: If this is a regression, enter the last known working version (e.g. v1.2.3) 
+    placeholder: v1.2.3
+- type: textarea
+  attributes:
+    label: Expected Behaviour
+    description: Provide a clear and concise description of what you expected to happen when performing the steps mentioned above.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Actual Behaviour
+    description: Provide a clear and concise description of what actually happened when performing the steps. Be specific and provide any error messages or unexpected behavior encountered.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Code Snippets
+    description: If applicable, include code snippets to demonstrate the bug.
+    render: shell
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Media
+    description: If applicable, include screenshots or GIFs to demonstrate the bug.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: Provide information about the environment in which the bug occurred, use all the applicable bulleted list elements for this specific issue, and remove all the bulleted list elements that are not relevant for this issue.
+    value: |
+      - Browser: <!-- e.g. Chrome 114.0.5735.133 (Official Build) (64-bit), Firefox 114.0.1 (64-bit) Mozilla Firefox Snap for Ubuntu -->
+      - OS: <!-- e.g. Ubuntu 5.4.0-26-generic x86_64, Windows 10 1904 -->
+      - Device: <!-- e.g. iPhone X Max, Samsung Galaxy 10, Lenovo ThinkPad XY -->
+      - Sendance Device: <!-- e.g. Sendance-CSC, Sendance-Grid-XY -->
+      - Firmware Version: <!-- e.g. 3.0.1 -->
+      - Production Machine: <!-- e.g. Pressure-Tester-Erika -->
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Include any additional information that may be relevant to the bug, such as related issues, workarounds, or any troubleshooting steps you have attempted.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: "_The following sections have to be filled by the person who is responsible for solving the bug._"
+- type: textarea
+  attributes:
+    label: Solution Summary
+    description: (TO BE FILLED BY ENGINEER)
+    value: Provide a brief summary of the final solution and its outcome.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Solution Path
+    description: (TO BE FILLED BY ENGINEER)
+    value: |
+      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
+      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the bug. Include any relevant code snippets, configurations, or procedures. 
+  validations:
+    required: false

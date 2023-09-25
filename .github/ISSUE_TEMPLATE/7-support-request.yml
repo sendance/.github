@@ -1,0 +1,96 @@
+name: '❓ Support Request'
+description: 'Ask for help.'
+title: '[Support] '
+#labels: ['Topic: Support', 'Status: In Triage']
+#projects: ["sendance/4"]
+#assignees:
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      Before asking for support or posting a question, first read the project's README.md file and
+      (if there is any) the WIKI pages or any other additional documentation that might be listed
+      in the project's README.md file.
+      
+      To expedite issue processing, please search open and closed issues before submitting a new one.
+      Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md
+- type: markdown
+  attributes:
+    value: "# ❓ Support Request"
+- type: input
+  attributes:
+    label: Source Type
+    description: Where the this issue/request originates from. E.g. a backlog ticket, QMS-Ticket (PIT) or Customer Feedback, Ideation Workshop Meeting, etc.
+    placeholder: "e.g. 'Backlog'"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Source Link
+    description: E.g. a link to the backlog ticket, customer support request, meeting notes etc.
+    placeholder: "E.g. '#xyz' or 'https//...'"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Description
+    description: Provide a clear and concise description of your support request or question.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Context
+    description: |
+       Explain the background or context of your support request or question. Include any relevant information about your environment, configurations, or specific use case.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps Taken
+    description: Outline the steps you have already taken to address the issue or question. Mention any troubleshooting or research you have done on your own.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected Outcome
+    description: Describe what you expect to happen or the desired outcome for your support request or question.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Current Outcome
+    description: Explain what is currently happening or the current state of the issue. Provide any error messages or unexpected behavior encountered.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Media
+    description: If applicable, include screenshots or GIFs to help understanding the problem for which you would like to get support.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Include any additional information or details that might be helpful for others to understand and assist with your support request or question.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: "_The following sections have to be filled by the person who is responsible for handling the support request._"
+- type: textarea
+  attributes:
+    label: Solution Summary
+    description: (TO BE FILLED BY ENGINEER)
+    value: Provide a brief summary of the final solution and its outcome.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Solution Path
+    description: (TO BE FILLED BY ENGINEER)
+    value: |
+      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
+      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the bug. Include any relevant code snippets, configurations, or procedures. 
+  validations:
+    required: false

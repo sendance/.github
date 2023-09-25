@@ -1,0 +1,128 @@
+name: '⚠️ Security Report'
+description: "Report an issue to help improving the project's security."
+title: '[Security] '
+#labels: ['Topic: Security', 'Status: In Triage']
+#projects: ["sendance/4"]
+#assignees:
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      To expedite issue processing, please search open and closed issues before submitting a new one.
+      Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
+      
+      FIRST OF ALL, read this project's SECURITY.md file. Located in `.github/SECURITY.md`.
+      
+      READ CAREFULLY IF YOUR ISSUE REPORT CONTAINS SENSIBLE OR PRIVATE DATA:
+      (data that might be leaked or subtracted from our servers due to this
+      security issue).
+      
+      If this security report (or the guide on how to "identify the security bug") includes
+      certain personal information or involves personal identifiable data, or you believe
+      that the data that you might leak by exposing the way on how to attack the project
+      could be considered as a data leak or could violate the privacy of any kind of
+      data or sensible data, please do not post it here and directly email the developer:
+      (support@sendance.at). You should post the issue with the least amount of
+      sensible or private data as possible to help us manage the security issue, and
+      with the extra data sent from your email to the developer (if any), we will deeply
+      analyze and try to fix it as fast as possible.
+      
+      If you are in doubt about the data that you might post here (screenshots or media
+      also, count as data), please directly email us.
+      
+      The data that must NOT be posted here:
+      
+      * Legal and/or full names
+      * Names or usernames combined with other identifiers like phone numbers or email addresses
+      * Health or financial information (including insurance information, social security numbers, etc.)
+      * Information about political or religious affiliations
+      * Information about race, ethnicity, sexual orientation, gender, or other identifying information that could be used for discriminatory purposes
+- type: markdown
+  attributes:
+    value: "# ⚠️ Security Report"
+- type: input
+  attributes:
+    label: Source Type
+    description: Where the this issue/request originates from. E.g. a backlog ticket, QMS-Ticket (PIT) or Customer Feedback, Ideation Workshop Meeting, etc.
+    placeholder: "e.g. 'Backlog'"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Source Link
+    description: E.g. a link to the backlog ticket, customer support request, meeting notes etc.
+    placeholder: "E.g. '#xyz' or 'https//...'"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Description
+    description: Provide a clear and concise description of the security issue or vulnerability you encountered.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: |
+      Outline the steps to reproduce the bug in a systematic manner. This helps in identifying the exact scenario that triggers the issue.       
+    placeholder: |
+      1. Use x argument / navigate to
+      2. Fill this information
+      3. Go to...
+      4. See error -->
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Proof of Concept (Optional)
+    description: If applicable and safe to share, provide a proof of concept (PoC) code or detailed explanation that demonstrates the security issue. Only share PoCs if the maintainers explicitly request them and ensure they do not cause harm or violate privacy.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Impact
+    description: Explain the potential impact and risk associated with the security issue or vulnerability on the system, data, or users. Highlight any sensitive information that may be exposed.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Proposed Solution
+    description: If you have any recommendations for fixing or mitigating the security issue, provide them here. Offer suggestions on how to improve the affected code or configuration.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: Provide information about the environment in which the security issue occurred, use all the applicable bulleted list elements for this specific issue, and remove all the bulleted list elements that are not relevant for this issue.
+    value: |
+      - Browser: <!-- e.g. Chrome 114.0.5735.133 (Official Build) (64-bit), Firefox 114.0.1 (64-bit) Mozilla Firefox Snap for Ubuntu -->
+      - OS: <!-- e.g. Ubuntu 5.4.0-26-generic x86_64, Windows 10 1904 -->
+      - Device: <!-- e.g. iPhone X Max, Samsung Galaxy 10, Lenovo ThinkPad XY -->
+      - Sendance Device: <!-- e.g. Sendance-CSC, Sendance-Grid-XY -->
+      - Firmware Version: <!-- e.g. 3.0.1 -->
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Include any additional information, references, or related research that may be helpful for the maintainers to understand and resolve the security issue.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: "_The following sections have to be filled by the person who is responsible for handling the security report._"
+- type: textarea
+  attributes:
+    label: Solution Summary
+    description: (TO BE FILLED BY ENGINEER)
+    value: Provide a brief summary of the final solution and its outcome.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Solution Path
+    description: (TO BE FILLED BY ENGINEER)
+    value: |
+      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
+      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the bug. Include any relevant code snippets, configurations, or procedures. 
+  validations:
+    required: false

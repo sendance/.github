@@ -1,0 +1,72 @@
+name: '📦 CI Report'
+description: 'Report failing jobs or enhancements regarding the CI.'
+title: '[CI] '
+#labels: ['Topic: CI', 'Status: In Triage']
+#projects: ["sendance/4"]
+#assignees:
+
+body:
+- type: markdown
+  attributes:
+    value: "To expedite issue processing, please search open and closed issues before submitting a new one. Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`"
+- type: markdown
+  attributes:
+    value: "# 📦 CI Report"
+- type: input
+  attributes:
+    label: Source Type
+    description: Where the this issue/request originates from. E.g. a backlog ticket, QMS-Ticket (PIT) or Customer Feedback, Ideation Workshop Meeting, etc.
+    placeholder: "e.g. 'Backlog'"
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Source Link
+    description: E.g. a link to the backlog ticket, customer support request, meeting notes etc.
+    placeholder: "E.g. '#xyz' or 'https//...'"
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Which jobs are failing or need improvement?
+    description: Describe the CI jobs that are failing or need improvement and provide any relevant details or error messages.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Reason for failure or improvement
+    description: |
+      Try to describe why the jobs are failing or need improvement.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Media
+    description: If applicable, include screenshots or GIFs to help narrow down the problem.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: Add any other context or additional information about the problem here.
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: "_The following sections have to be filled by the person who is responsible for handling the testing report._"
+- type: textarea
+  attributes:
+    label: Solution Summary
+    description: (TO BE FILLED BY ENGINEER)
+    value: Provide a brief summary of the final decision and, if applicable, of the final solution and its outcome.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Solution Path
+    description: (TO BE FILLED BY ENGINEER)
+    value: |
+      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
+      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the failing or improvement of CI jobs. 
+  validations:
+    required: false
