@@ -30,6 +30,7 @@ body:
   attributes:
     label: Description
     description: Provide a clear and concise description of the feature you are requesting.
+    placeholder: "E.g. Ability to download local IMU recordings"
   validations:
     required: false
 - type: textarea
@@ -37,18 +38,21 @@ body:
     label: Problem Statement
     description: |
       Explain the problem or pain point that this feature would address. Provide context and examples to help others understand the need for this feature. 
+    placeholder: "E.g. currently we can record IMU data but have no option to download it"
   validations:
     required: false
 - type: textarea
   attributes:
     label: Proposed Solution
     description: Describe your proposed solution or idea for implementing the feature. Include any relevant details, functionality, or benefits that the feature would provide.
+    placeholder: "E.g. introduce a BLE Action Parameter that allows to specify the type of recording data"
   validations:
     required: false
 - type: textarea
   attributes:
     label: Alternatives Considered
     description: If you have considered any alternative approaches or solutions, mention them here and provide reasons why you believe your proposed solution is the most suitable.
+    placeholder: "E.g. always download all available recordings sequentially"
   validations:
     required: false
 - type: textarea
@@ -61,6 +65,7 @@ body:
   attributes:
     label: Additional Information
     description: Include any additional information or context that might be helpful for reviewers or developers.
+    placeholder: "e.g. We already tested downloading recordings sequentially successfully, but in the future, this could mean really long downloading times."
   validations:
     required: false
 - type: markdown
