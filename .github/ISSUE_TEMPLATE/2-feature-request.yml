@@ -29,7 +29,7 @@ body:
 - type: textarea
   attributes:
     label: Description
-    description: Provide a clear and concise description of the feature you are requesting.
+    description: Provide a clear and concise description of the feature you are requesting ('what do I want?').
     placeholder: "E.g. Ability to download local IMU recordings"
   validations:
     required: false
@@ -37,7 +37,7 @@ body:
   attributes:
     label: Problem Statement
     description: |
-      Explain the problem or pain point that this feature would address. Provide context and examples to help others understand the need for this feature. 
+      Explain the problem or pain point that this feature would address ('why do I want it?'). Provide context and examples to help others understand the need for this feature. 
     placeholder: "E.g. currently we can record IMU data but have no option to download it"
   validations:
     required: false

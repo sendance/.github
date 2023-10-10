@@ -15,6 +15,7 @@ body:
   attributes:
     label: Goal
     description: Provide a concise description what is the goal of the maximum of 3-days long SBI.
+    placeholder: "e.g., 'Improved documentation README of how to use RTT'"
   validations:
     required: false
 - type: textarea
@@ -23,7 +24,7 @@ body:
     description: |
       Outline the results achieved and/or link to further documentation or git-commits/PRs/branches.     
     placeholder: |
-      Tested sensor basis x and y. X had 30% less offset on average. More docs see Google Drive: <link> 
+      e.g., Tested sensor basis x and y. X had 30% less offset on average. More docs see Google Drive: <link> 
   validations:
     required: false
 - type: textarea
@@ -32,6 +33,6 @@ body:
     description: |
       Add a list of (to-be- or already ) executed steps (optional: using the "tasklist" feature, see https://docs.github.com/en/issues/managing-your-tasks-with-tasklists/creating-a-tasklist).    
     placeholder: |
-      Tasks: 1. Researched sensor basis options, 2. Order 2 most favorable ones 3. Build & test 2 samples  4. Evaluate data   
+      e.g., Tasks: 1. Researched sensor basis options, 2. Order 2 most favorable ones 3. Build & test 2 samples  4. Evaluate data   
   validations:
     required: false
