@@ -109,15 +109,13 @@ body:
   attributes:
     label: Solution Summary
     description: (TO BE FILLED BY ENGINEER)
-    value: Provide a brief summary of the final solution and its outcome.
+    placeholder: Provide a brief summary of the final solution and its outcome.
   validations:
     required: false
 - type: textarea
   attributes:
     label: Solution Path
     description: (TO BE FILLED BY ENGINEER)
-    value: |
-      - [ ] If backlog ticket: Add the sprint tasks (to-be) implemented and executed for the solution using the `tasklist` feature.
-      - [ ] If sprint task (or small backlog ticket):  If applicable, document the step-by-step solution path or approach taken to address the bug. Include any relevant code snippets, configurations, or procedures. 
+    placeholder: As engineer, after creating the PBI, use the `Add tasklist` feature to add your new/planned/already defined SBIs.
   validations:
     required: false
