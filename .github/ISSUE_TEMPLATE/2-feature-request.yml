@@ -85,3 +85,11 @@ body:
     placeholder: As engineer, after creating the PBI, use the `Add tasklist` feature to add your new/planned/already defined SBIs.
   validations:
     required: false
+- type: checkboxes
+  id: productcataloguecb
+  attributes:
+    label: Product Catalogue Updated
+    description: (To be filled before finishing/closing/completing this ticket)
+    options:
+      - label: I have updated an existing or added a new item to the product catalogue to reflect the change(s) implemented in this PBI.
+        required: false
