@@ -94,3 +94,5 @@ body:
     options:
       - label: I have updated an existing or added a new item to the product catalogue to reflect the change(s) implemented in this PBI.
         required: false
+      - label: It's not necessary to update the product catalogue due to this PBI.
+        required: false
