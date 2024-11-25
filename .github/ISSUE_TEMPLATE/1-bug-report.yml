@@ -29,7 +29,7 @@ body:
 - type: textarea
   attributes:
     label: Description
-    description: Provide a clear and concise description of the bug you encountered.
+    description: Provide a clear and concise description of the bug you encountered, what the expected behavior, and the current behavior is.
   validations:
     required: false
 - type: textarea
@@ -58,18 +58,6 @@ body:
     label: Last known working version
     description: If this is a regression, enter the last known working version (e.g. v1.2.3) 
     placeholder: v1.2.3
-- type: textarea
-  attributes:
-    label: Expected Behaviour
-    description: Provide a clear and concise description of what you expected to happen when performing the steps mentioned above.
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: Actual Behaviour
-    description: Provide a clear and concise description of what actually happened when performing the steps. Be specific and provide any error messages or unexpected behavior encountered.
-  validations:
-    required: false
 - type: textarea
   attributes:
     label: Code Snippets
