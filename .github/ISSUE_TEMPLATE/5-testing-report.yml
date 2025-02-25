@@ -71,6 +71,6 @@ body:
   attributes:
     label: Solution Path
     description: (TO BE FILLED BY ENGINEER)
-    placeholder: As engineer, after creating the PBI, use the `Add tasklist` feature to add your new/planned/already defined SBIs.
+    placeholder: As engineer, after creating the PBI, use the `Create sub-issue / Add existing issue` feature to add your new/planned/already defined SBIs.
   validations:
     required: false
